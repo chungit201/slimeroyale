@@ -2438,7 +2438,7 @@ body {
     #SECTION26>.ladi-section-background {
         background-size: cover;
         background-attachment: fixed;
-        background-image: url("https://w.ladicdn.com/s1440x878/6276b829a404bc006a89ac25/bg-20220713033415.png");
+        background-image: url(../images/newBackground.webp);
         background-position: left center;
         background-repeat: repeat;
     }
@@ -5852,8 +5852,7 @@ body {
         opacity: 0.8;
     }
 
-    
-
+  
     #SECTION24>.ladi-section-background {
         background-size: cover;
         background-attachment: fixed;

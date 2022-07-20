@@ -41,3 +41,11 @@ p  {
     color:#FFFFFF;
     opacity: 0.8;
 }
+.ladi-wraper {
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: url(../images/newBackground.webp) !important;
+        background-position: left center;
+        background-repeat: repeat;
+
+}
