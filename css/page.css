@@ -77,3 +77,13 @@ p {
 .action-change{
     font-size: 13px !important;
 }
+.word-item{
+    background: rgba(217, 217, 217, 0.3);
+}
+.inner-item{
+    background-image:url(../images/Group\ 1505.png) ;
+    background-position: left center;
+    background-repeat: repeat;
+    height: 500px;
+    width: 100%;
+}
