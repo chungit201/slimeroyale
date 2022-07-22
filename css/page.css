@@ -75,6 +75,7 @@ p {
 }
 .action-change{
     font-size: 13px !important;
+    padding-left: 20px;
 }
 .word-item{
     background: rgba(217, 217, 217, 0.3);
@@ -152,4 +153,9 @@ p {
     100% {
         transform: scale(1.0);
     }
+}
+.event_list_mobile{
+    position: relative;
+    width: 250px;
+    overflow-x: scroll;
 }

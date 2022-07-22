@@ -9204,7 +9204,7 @@ body {
     }
 }
 /* pc */
-@media only screen and (min-width:768px){
+@media  screen and (min-width:960px){
     .pc__none{
         display:none !important;
     }
@@ -9212,8 +9212,7 @@ body {
 
 /* mobile */
 
-@media only screen and (max-width: 767px){
-   
+@media  screen and (max-width: 768px){
     .mobile__none{
         display: none !important;
     }
