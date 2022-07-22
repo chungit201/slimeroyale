@@ -140,7 +140,7 @@ p {
   }
   .btn-dowload-top{
     position: relative;
-    animation: leaves 0.1s infinite;
+    animation: leaves 2s infinite;
     cursor: pointer;
   }
   @keyframes leaves {
@@ -158,4 +158,10 @@ p {
     position: relative;
     width: 250px;
     overflow-x: scroll;
+}
+.nav-link:hover {
+    color: #FBC600 !important;
+}
+.navbar-toggler{
+    outline:none !important;  
 }
