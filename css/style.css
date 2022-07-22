@@ -9204,7 +9204,7 @@ body {
     }
 }
 /* pc */
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:768px){
     .pc__none{
         display:none !important;
     }
