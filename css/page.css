@@ -98,8 +98,11 @@ p {
     position: relative;
 }
 .title-sections-pc{
-    font-weight: 700;
-    color: #ffa600;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 900;
+    color: #ffa600; 
 }
 #SECTION24 {
     height: 600px;
@@ -119,4 +122,34 @@ p {
 
 .div#SECTION79 {
     margin-top: 100px;
+}
+.bg_slime_chronicle{
+    background:linear-gradient(180deg, #3F1175 0%, #2C0D50 119.68%) ;
+}
+.boder__active{
+    color: #FBC600;
+}
+
+  .text-gradient {
+    background: linear-gradient(115.12deg, #FCEF06 55.67%, #EA8000 89.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .btn-dowload-top{
+    position: relative;
+    animation: leaves 0.1s infinite;
+    cursor: pointer;
+  }
+  @keyframes leaves {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
 }

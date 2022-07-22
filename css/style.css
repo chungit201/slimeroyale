@@ -460,7 +460,8 @@ body {
 }
 
 .ladi-element {
-    position: absolute
+    position: absolute;
+    cursor: pointer;
 }
 
 .ladi-overlay {
