@@ -4,7 +4,6 @@ body {
 
 p {
     font-family: 'Quicksand';
-    margin-bottom: 0.5rem !important
 }
 
 .ladi-paragraph-mobile {
@@ -91,6 +90,7 @@ p {
     cursor: pointer;
 }
 .sections-1-pc{
+    margin-top: 100px;
     background: #3F1175;
     border: 4px solid #0000;
     border-color: #0000;
@@ -103,6 +103,10 @@ p {
 }
 #SECTION24 {
     height: 600px;
+}
+#SECTION_CLASSES {
+    background: linear-gradient(180deg, #3F1175 0%, #2C0D50 119.68%);
+    
 }
 .slider_83_pc{
     background-image:url(../images/bg_slime.webp) ;
