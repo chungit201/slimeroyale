@@ -4034,10 +4034,10 @@ body {
     }
 
     #IMAGE180 {
-        width: 746.813px;
+        /* width: 746.813px;
         height: 687.833px;
-        top: 0px;
-        left: 634.402px;
+        top: 0px; */
+        /* left: 634.402px; */
     }
 
     #IMAGE180>.ladi-image>.ladi-image-background {
@@ -4049,10 +4049,10 @@ body {
     }
 
     #GROUP243 {
-        width: 1381.22px;
+        /* width: 1381.22px;
         height: 687.833px;
         top: 111.917px;
-        left: -204.547px;
+        left: -204.547px; */
     }
 
     #GROUP288 {
@@ -7471,7 +7471,7 @@ body {
         width: 746.813px;
         height: 687.833px;
         top: 0px;
-        left: 634.402px;
+        /* left: 634.402px; */
     }
 
     #IMAGE180>.ladi-image>.ladi-image-background {

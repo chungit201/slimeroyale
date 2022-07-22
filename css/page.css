@@ -165,3 +165,17 @@ p {
 .navbar-toggler{
     outline:none !important;  
 }
+
+.text-event-box{
+    color: #FFFFFF;
+    font-size: 32px;
+
+}.text-event-content{
+    font-weight: 500;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 0.7;
+}
+.active_event{
+    opacity: 1;
+}
