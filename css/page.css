@@ -179,3 +179,7 @@ p {
 .active_event{
     opacity: 1;
 }
+.pg_chronicle{
+    background: linear-gradient(146.33deg, rgba(204, 192, 255, 0.36) 0%, rgba(196, 196, 196, 0) 100%, #DFBFFF 100%);
+    border-radius: 20px;
+}
