@@ -142,9 +142,9 @@ p {
     text-fill-color: transparent;
   }
   .btn-dowload-top{
-    position: relative;
+    /* position: relative;
     animation: leaves 2s infinite;
-    cursor: pointer;
+    cursor: pointer; */
   }
   @keyframes leaves {
     0% {
@@ -175,7 +175,7 @@ p {
 
 }.text-event-content{
     font-weight: 500;
-    font-size: 28px;
+    font-size: 24px;
     color: rgba(255, 255, 255, 0.9);
     opacity: 0.7;
 }
