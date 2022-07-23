@@ -9208,6 +9208,7 @@ body {
     .pc__none{
         display:none !important;
     }
+
 }
 
 /* mobile */
@@ -9216,8 +9217,20 @@ body {
     .mobile__none{
         display: none !important;
     }
+    .title-sections-mobile{
+        font-size: 60px !important;
+    }
+    .text-light{
+        font-size: 32px !important;
+    }
+    .text_blog_title{
+        font-size: 32px !important;
+    }
+    .fun_text p{
+        font-size: 32px !important;
+    }
 }
 
 .line-slider{
     top: 25%;
-}
+ }

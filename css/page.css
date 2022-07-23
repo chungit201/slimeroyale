@@ -96,6 +96,13 @@ p {
     height: 200px;
     position: relative;
 }
+.title-sections-mobile{
+    letter-spacing: 0.02em;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 900;
+    color: #ffa600; 
+}
 .title-sections-pc{
     letter-spacing: 0.02em;
     font-style: normal;
