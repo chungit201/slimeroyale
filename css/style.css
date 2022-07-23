@@ -3351,7 +3351,7 @@ body {
     #PARAGRAPH99>.ladi-paragraph {
         font-family: "Nunito-Black.ttf";
         color: rgb(255, 255, 255);
-        font-size: 40px;
+        font-size: 28px;
         text-align: center;
         line-height: 1.6;
     }
@@ -9217,18 +9217,53 @@ body {
     .mobile__none{
         display: none !important;
     }
+}
+@media  screen and (max-width: 1020px){
+    .mobile__none{
+        display: none !important;
+    }
+    .event_list_mobile{
+        max-width: 600px !important;
+    }
+    .text-slime-chronicle{
+        font-size: 16px;
+        color: #FFFFFF;
+    }
     .title-sections-mobile{
         font-size: 60px !important;
     }
     .text-light{
-        font-size: 32px !important;
+        font-size: 40px !important;
     }
     .text_blog_title{
         font-size: 32px !important;
     }
     .fun_text p{
-        font-size: 32px !important;
+        font-size: 28px !important;
+        margin-bottom: 0;
+        line-height: 3rem;
     }
+
+}
+@media screen and (max-width: 767px) {
+    .event_list_mobile{
+        width: 300px !important;
+    }
+    .title-sections-mobile{
+        font-size: 48px !important;
+    }
+    .text-light{
+        font-size: 16px !important;
+    }
+    .text_blog_title{
+        font-size: 24px !important;
+    }
+    .fun_text p{
+        font-size: 18px !important;
+        margin-bottom: 0;
+        line-height: 30px;
+    }
+
 }
 
 .line-slider{
