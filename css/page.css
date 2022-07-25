@@ -291,3 +291,6 @@ p {
 .active_event span {
     opacity: 1;
 }
+.carousel-control-next, .carousel-control-prev{
+    z-index: 0 !important;
+}
