@@ -67,6 +67,9 @@ p {
 
 #SECTION98_MOBILE {
     background: linear-gradient(180deg, #3F1175 0%, #2C0D50 119.68%);
+    border-color: #0000;
+    border-top: 10px solid;
+    border-bottom: 10px solid;
 }
 
 .slider-list-top {
@@ -133,7 +136,9 @@ p {
 
 #SECTION_CLASSES {
     background: linear-gradient(180deg, #3F1175 0%, #2C0D50 119.68%);
-
+    border-color: #0000;
+    border-top: 10px solid;
+    border-bottom: 10px solid;
 }
 
 .slider_83_pc {
@@ -303,4 +308,9 @@ p {
 }
 .carousel-control-next, .carousel-control-prev{
     z-index: 0 !important;
+}
+.section_1_pv{
+    position: absolute !important;
+    bottom: 50%;
+    transform: translateY(50%);
 }
