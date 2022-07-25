@@ -836,7 +836,7 @@
                       <div class="title_slime_text ">Tank</div>
                       <div class="text-default py-4">SPECIAL SKILL</div>
                       <p class="mt-3" style="color:#FFF3F3 ;font-size: 18px;">
-                        <b>Jump high (immune to all damage)</b>then <b>stomps the ground with a powerful force dealing
+                        <b>Jump high (immune to all damage)</b> then <b>stomps the ground with a powerful force dealing
                           damage to all nearby enemies.. </b>
                       </p>
                     </div>
@@ -1086,8 +1086,8 @@
           <div class="col-xl-6 col-md-12 col-6">
             <div class="row">
               <div class="col-6 h-100 ">
-                <a style="text-decoration: none;" href="https://whitepaper.slimeroyale.com/gameplay/the-circle-system"
-                  target="_blank">
+                <a style="text-decoration: none;" href="#"
+                  >
                   <div class="pg_chronicle p-4 text-center">
                     <img height="175px" src="./images/small card.webp" alt="">
                     <div class="blog_chain_title py-2">RENT SHOP</div>
@@ -1253,33 +1253,33 @@
                   </svg>
                   <span class="text-event-box mx-2 " style="font-weight: 900;">2022</span>
                 </div>
-                <div onclick="handleSlimeEvent(0,this)" style="margin-left: 5px;position: relative;cursor:pointer;">
+                <div  style="margin-left: 5px;position: relative;cursor:pointer;">
                   <img height="30px" src="./images/Line 39.png" alt="">
-                  <span class="text-event-content mx-2 active_event" style="position: absolute;bottom:-10px;">2 INO
+                  <span onclick="handleSlimeEvent(0,this)" class="text-event-content mx-2 active_event" style="position: absolute;bottom:-10px;">2 INO
                     events</span>
                 </div>
-                <div onclick="handleSlimeEvent(1,this)" class="mt-4"
+                <div class="mt-4"
                   style="margin-left: 5px;position: relative;cursor: pointer;">
                   <img height="30px" src="./images/Line 39.png" alt="">
-                  <span class="text-event-content mx-2 " style="position: absolute;bottom:-10px;;">Marketplace
+                  <span onclick="handleSlimeEvent(1,this)"  class="text-event-content mx-2 " style="position: absolute;bottom:-10px;;">Marketplace
                     release</span>
                 </div>
-                <div onclick="handleSlimeEvent(2,this)" class="mt-4"
+                <div  class="mt-4"
                   style="margin-left: 5px;position: relative;cursor: pointer;">
                   <img height="30px" src="./images/Line 39.png" alt="">
-                  <span class="text-event-content mx-2 " style="position: absolute;bottom:-10px;;">Closed Beta Game
+                  <span onclick="handleSlimeEvent(2,this)" class="text-event-content mx-2 " style="position: absolute;bottom:-10px;;">Closed Beta Game
                     Released</span>
                 </div>
-                <div onclick="handleSlimeEvent(3,this)" class="mt-4"
+                <div  class="mt-4"
                   style="margin-left: 5px;position: relative;cursor: pointer;">
                   <img height="30px" src="./images/Line 39.png" alt="">
-                  <span class="text-event-content mx-2 " style="position: absolute;bottom:-10px;;">Smart Contract Audit
+                  <span onclick="handleSlimeEvent(3,this)" class="text-event-content mx-2 " style="position: absolute;bottom:-10px;;">Smart Contract Audit
                     & Listing</span>
                 </div>
-                <div onclick="handleSlimeEvent(4,this)" class="mt-4"
+                <div  class="mt-4"
                   style="margin-left: 5px;position: relative;cursor: pointer;">
                   <img height="30px" src="./images/Line 39.png" alt="">
-                  <span class="text-event-content mx-2 " style="position: absolute;bottom:-10px;;">Breeding
+                  <span onclick="handleSlimeEvent(4,this)" class="text-event-content mx-2 " style="position: absolute;bottom:-10px;;">Breeding
                     Function</span>
                 </div>
 
@@ -1313,29 +1313,29 @@
 
         <div style="position: relative;" class="slider-list-top mt-4">
           <div class="d-flex p-2 justify-content-between event_list_mobile" style="margin-left: 120px;">
-            <div onclick="handleSlimeEventMobile(0)" style="width: 100px;" class="text-light text-center action-change">
+            <div onclick="handleSlimeEventMobile(0)" data-value="0" style="width: 100px;" class="text-light text-center action-change">
               <div>2022</div>
               <div>2 INFO</div>
               <div>envent</div>
             </div>
-            <div onclick="handleSlimeEventMobile(1)" class="text-light text-center action-change">
+            <div onclick="handleSlimeEventMobile(1)" data-value="1" class="text-light text-center action-change">
               <div>2022</div>
               <div>Marketplace </div>
               <div>release</div>
             </div>
-            <div onclick="handleSlimeEventMobile(2)" class="text-light text-center action-change">
+            <div onclick="handleSlimeEventMobile(2)" data-value="2" class="text-light text-center action-change">
               <div>2022</div>
               <div>Closed Beta Game</div>
               <div>release</div>
             </div>
 
-            <div onclick="handleSlimeEventMobile(3)" class="text-light text-center action-change">
+            <div onclick="handleSlimeEventMobile(3)" data-value="3" class="text-light text-center action-change">
               <div>2022</div>
               <div>Smart Contract Audit</div>
               <div>& Listing</div>
             </div>
 
-            <div onclick="handleSlimeEventMobile(4)" class="text-light text-center action-change">
+            <div onclick="handleSlimeEventMobile(4)" data-value="4" class="text-light text-center action-change">
               <div>2022</div>
               <div>Breeding</div>
               <div>Function</div>
@@ -1586,14 +1586,15 @@
         classList = activeSliederSlimeMobile[value].classList.add("active")
         // console.log(classList.contains("active"));
       }
-      const activeDefaule = document.querySelectorAll('.active_event')
       const changImageEvent = document.getElementById('select_event');
       async function handleSlimeEvent(index, data) {
-        activeDefaule.forEach(async (item) => {
-          await item.classList.remove('active_event')
+      const activeDefaule = document.querySelectorAll('.active_event')
+        activeDefaule.forEach(item=>{
+          item.classList.remove('active_event');
         })
-        console.log(data.classList);
-        data.classList.add('active_event');
+
+
+        data.classList.add('active_event')
         changImageEvent.style.backgroundImage = ""
         console.log(index);
         if (index == 0) {

@@ -103,6 +103,11 @@ p {
     border-top: 10px solid;
     border-bottom: 10px solid;
 }
+#SECTION98_PC{
+    border-color: #0000;
+    border-top: 10px solid;
+    border-bottom: 10px solid;
+}
 
 .fun_text p {
     margin-bottom: 0;
@@ -202,6 +207,7 @@ p {
 
 }
 
+
 .text-event-content {
     font-weight: 500;
     font-size: 18px;
@@ -210,6 +216,10 @@ p {
 }
 
 .active_event {
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, #8F55CA 0%, rgba(170, 132, 208, 0.609375) 43.23%, rgba(217, 217, 217, 0) 100%);
     opacity: 1;
 }
 
