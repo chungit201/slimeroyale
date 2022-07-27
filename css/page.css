@@ -314,3 +314,24 @@ p {
     bottom: 50%;
     transform: translateY(50%);
 }
+.flower_section1{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.flower_section2{
+    position: absolute;
+    bottom: 20px;
+    left: 34%;
+}
+.flower_section3{
+    position: absolute;
+    bottom: 20px;
+    right: 36%;
+}
+.flower_section4{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
