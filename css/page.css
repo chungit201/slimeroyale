@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
 body {
     font-family: 'Quicksand' !important;
 }
@@ -7,10 +8,12 @@ p {
 }
 
 .ladi-paragraph-mobile {
-    color: #FFFFFF;
-    font-size: 24px;
-    ;
-    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 31px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 900;
 }
 
 .text_blog_title {
@@ -127,6 +130,7 @@ p {
 }
 
 .title-sections-pc {
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 0.02em;
     font-style: normal;
     font-size: 38px;
@@ -145,7 +149,7 @@ p {
     background-image: url(../images/bg_slime.webp);
     background-position: left center;
     background-repeat: repeat;
-    min-height: 500px;
+    max-height: 680px;
     width: 100%;
     border-top: 10px solid;
     border-bottom: 10px solid;
