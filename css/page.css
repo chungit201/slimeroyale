@@ -344,3 +344,15 @@ p {
 }
 .event_list_mobile{
 }
+.action-active-slime{
+    position: relative;
+    background-image: url(/images/Group\ 1539.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text_show_ev{
+    opacity: 0.6;
+}
+.active_color{
+    opacity: 1 !important;
+}

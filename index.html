@@ -71,7 +71,7 @@
       <nav style="position:fixed ;top: 0;z-index: 10;width: 100%;" class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" alt="">
+            <img height="50px" src="./images/logo.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -277,14 +277,17 @@
     <div id="SECTION26_MOBILE" class='ladi-section pc__none'>
       <div style="position: relative;" id="SECTION24_MOBILE" class='ladi-section SECTION24-mobile py-5 '>
 
-        <div class=" d-flex justify-content-center container">
+        <div class=" d-flex justify-content-center container" style="margin-bottom: 60px;">
           <img class="mx-2 mt-1" height="30" src="./images/vecter2.png" alt="">
           <p class='ladi-paragraph-mobile text-center mx-2'>ACHIEVEMENTS</p>
           <img class="mx-2 mt-1" height="30" src="./images/vecter2.png" alt="">
         </div>
 
-        <div style="position: relative; z-index: 2;padding-top: 180px;" id="carouselExampleControls"
-          class="carousel slide mt-5" data-bs-ride="carousel">
+       
+        <div style="position: relative;z-index: 1;top: 34%;" class="w-100 line-slider">
+          <img width="100%" src="./images/Box (1).png" alt="">
+          <div style="position: absolute; z-index: 2;bottom: 50%;transform: translateY(50%);" id="carouselExampleControls"
+          class="carousel slide w-100 mt-5" data-bs-ride="carousel">
           <div class="carousel-inner section_1_pv">
             <div class="carousel-item active">
               <div class="row d-flex justify-content-center">
@@ -356,8 +359,6 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div style="position: absolute;z-index: 1;top: 34%;" class="w-100 line-slider">
-          <img width="100%" src="./images/Box (1).png" alt="">
         </div>
       </div>
 
@@ -1330,20 +1331,17 @@
         <div style="position: relative;" class="slider-list-top mt-4">
           <div class="d-flex p-2 justify-content-between event_list_mobile">
             <div style="position: relative;" onclick="handleSlimeEventMobile(0,this)" data-value="0"
-              class="text-light text-center action-change d-flex align-items-center">
-              <div class="w-100" style="z-index: 4;">
+              class="text-light text-center action-change d-flex align-items-center action-active-slime ">
+              <div class="w-100 text_show_ev active_color" style="z-index: 4;">
                 <div>2022</div>
                 <div>2 INFO</div>
                 <div>envent</div>
               </div>
-              <div class="w-100 d-flex justify-content-center"
-                style="position: absolute;bottom: 50%;transform: translateY(50%);z-index: 1;">
-                <img width="70px" src="./images/Group 1539.png" alt="">
-              </div>
+              
             </div>
             <div onclick="handleSlimeEventMobile(1,this)" data-value="1"
               class="text-light text-center action-change d-flex align-items-center">
-              <div class="w-100">
+              <div class="w-100 text_show_ev">
                 <div>2022</div>
                 <div>Marketplace </div>
                 <div>release</div>
@@ -1351,7 +1349,7 @@
             </div>
             <div onclick="handleSlimeEventMobile(2,this)" data-value="2"
               class="text-light text-center action-change d-flex align-items-center">
-              <div class="w-100">
+              <div class="w-100 text_show_ev">
                 <div>2022</div>
                 <div>Closed Beta Game</div>
                 <div>release</div>
@@ -1360,7 +1358,7 @@
 
             <div onclick="handleSlimeEventMobile(3,this)" data-value="3"
               class="text-light text-center action-change d-flex align-items-center">
-              <div class="w-100">
+              <div class="w-100 text_show_ev">
                 <div>2022</div>
                 <div>Smart Contract Audit</div>
                 <div>& Listing</div>
@@ -1369,7 +1367,7 @@
 
             <div onclick="handleSlimeEventMobile(4,this)" data-value="4"
               class="text-light text-center action-change d-flex align-items-center">
-              <div class="w-100">
+              <div class="w-100 text_show_ev">
                 <div>2022</div>
                 <div>Breeding</div>
                 <div>Function</div>
@@ -1643,12 +1641,25 @@
         }
       }
       const activeEventMobile = document.querySelectorAll(".event_mobile")
+      const active_chon = document.querySelectorAll(".action-change");
+      const text_show_ev = document.querySelectorAll(".text_show_ev");
+      const handleSlimeEventMobile = (value,box) => {
+        active_chon.forEach(item => {
+          console.log(item);
+          item.classList.remove("action-active-slime")
+        })
+        box.classList.add('action-active-slime');
 
-      const handleSlimeEventMobile = (value) => {
         activeEventMobile.forEach(item => {
           item.classList.remove("active")
         })
-        activeEventMobile[value].classList.add("active")
+        activeEventMobile[value].classList.add("active");
+
+        text_show_ev.forEach(item => {
+          console.log(item);
+          item.classList.remove("active_color")
+        })
+        text_show_ev[value].classList.add("active_color")
       }
 
       // const active_img = document.querySelectorAll('.img_btn');

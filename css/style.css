@@ -9162,8 +9162,9 @@ body {
         margin-top: 5rem!important;
     }
     div#carouselExampleControls {
-        padding-top: 540px !important;
+        /* padding-top: 540px !important; */
     }
+
     .mobile__none{
         display: none !important;
     }
@@ -9189,7 +9190,7 @@ body {
 
 }
 @media screen and (max-width: 767px) {
-  
+   
     .title-sections-mobile{
         font-size: 48px !important;
     }
