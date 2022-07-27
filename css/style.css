@@ -9158,6 +9158,12 @@ body {
     }
 }
 @media  screen and (max-width: 1020px){
+    .col-8.mt-5.full_box{
+        margin-top: 5rem!important;
+    }
+    div#carouselExampleControls {
+        padding-top: 540px !important;
+    }
     .mobile__none{
         display: none !important;
     }

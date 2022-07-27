@@ -68,7 +68,7 @@
       <video autoplay muted loop preload width="100%" height="40%">
         <source src="./images/header_preview.mp4" type="video/mp4" />
       </video>
-      <nav style="position:absolute ;top: 0;z-index: 10;width: 100%;" class="navbar navbar-expand-lg">
+      <nav style="position:fixed ;top: 0;z-index: 10;width: 100%;" class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./images/logo.png" alt="">
@@ -93,7 +93,7 @@
                 <a class="nav-link" target="_blank" href="https://whitepaper.slimeroyale.com/">Whitepaper</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="https://discord.com/channels/920869260790759504/920883836433342464">FAQ</a>
               </li>
             </ul>
           </div>
@@ -107,7 +107,13 @@
           </div>
           <div style="cursor: pointer;"
             class="col-2 btn-dowload-top d-flex align-items-center wow animate__animated animate__fadeInUp">
-            <img width="100%" src="./images/btn-download.png" alt="">
+            <div style="position: relative;" class="">
+              <img width="100%" src="./images/btn_download.png" alt="">
+              <div class="w-100 d-flex justify-content-center" style="position: absolute; bottom: 50%;transform: translateY(50%);">
+                <img width="10%" src="./images/google-play 1.png" alt=""> 
+                <span class="text-light btn_download_text mx-2" style="font-weight: 700;" > Download game</span>
+              </div>
+            </div>
           </div>
           <div class="col-3  wow animate__animated animate__fadeInRight">
             <img width="100%" src="./images/free-to-play-1.png" alt="">
@@ -369,7 +375,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row d-flex justify-content-center">
-                <div class="col-8 mt-5">
+                <div class="col-8 mt-5 full_box">
                   <div class="mt-5" style="position: relative;">
                     <img src="./images/box-2.webp" class="d-block w-100" alt="...">
                     <div style="position: absolute; top: -25%;z-index: 10;"
@@ -394,7 +400,7 @@
 
             <div class="carousel-item">
               <div class="row d-flex justify-content-center">
-                <div class="col-8 mt-5">
+                <div class="col-8 mt-5 full_box">
                   <div class="mt-5" style="position: relative;">
                     <img src="./images/box-2.webp" class="d-block w-100" alt="...">
                     <div style="position: absolute; top: -25%;z-index: 10;"
@@ -419,7 +425,7 @@
 
             <div class="carousel-item">
               <div class="row d-flex justify-content-center">
-                <div class="col-8 mt-5">
+                <div class="col-8 mt-5 full_box">
                   <div class="mt-5" style="position: relative;">
                     <img src="./images/box-2.webp" class="d-block w-100" alt="...">
                     <div style="position: absolute; top: -20%;z-index: 10;"
@@ -1455,11 +1461,7 @@
               <div class="ladi-image-background"></div>
             </div>
           </div>
-          <div id="IMAGE107" class='ladi-element'>
-            <div class='ladi-image'>
-              <div class="ladi-image-background"></div>
-            </div>
-          </div>
+         
         </div>
       </div>
       <div id="SECTION_POPUP" class='ladi-section'>
