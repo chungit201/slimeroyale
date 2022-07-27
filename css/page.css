@@ -80,7 +80,7 @@ p {
 }
 
 .action-change {
-    min-width: 160px;
+    min-width: 80px;
     font-size: 13px !important;
 }
 
@@ -217,6 +217,8 @@ p {
 }
 
 
+
+
 .text-event-content {
     font-weight: 500;
     font-size: 18px;
@@ -276,31 +278,37 @@ p {
     transform: translateY(-1rem);
     box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
 }
+@media (min-width:1080px){
+    .carousel-indicators [data-bs-target]{
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        height: 28 !important;
+        width: 18px !important;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 3px;
+        cursor: pointer;
+        background-color: rgb(0, 0, 0);
+        background-clip: padding-box;
+        border: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        opacity: .5;
+        transition: opacity .6s ease;
+    }
+    .carousel-indicators .active {
+        background-image: url(../images/Rounded\ Rectangle\ 7\ copy\ 2\ 1.png) !important;
+        width: 15px;
+        height: 18px;
+        background-size: cover;
+    }
+}
 
-.carousel-indicators [data-bs-target] {
-    box-sizing: none !important; 
-    flex: none !important;
-    width: 17px !important;
-    height: 17px !important;
-    padding: 0;
-    margin-right: 0;
-    margin-left: 3px;
-    text-indent: 0px;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0) !important;
-    background-clip: 0;
-    border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .6s ease;
+.carousel-indicators div {
+    text-indent: 1 !important;
 }
-.carousel-indicators .active {
-    background-image: url(../images/Rounded\ Rectangle\ 7\ copy\ 2\ 1.png) !important;
-    width: 15px;
-    height: 18px;
-    background-size: cover;
-}
+
+
 .img_btn{
     background-image: url(../images/Ellipse\ 6\ copy\ 3\ 10.png) !important;
     width: 15px;
@@ -344,6 +352,10 @@ p {
 }
 .event_list_mobile{
 }
+
+.slime_chornmm_item{
+    width: 120px;
+}
 .action-active-slime{
     position: relative;
     background-image: url(/images/Group\ 1539.png);
@@ -352,6 +364,8 @@ p {
 }
 .text_show_ev{
     opacity: 0.6;
+    font-size: 10px;
+    line-height: 12px;
 }
 .active_color{
     opacity: 1 !important;
