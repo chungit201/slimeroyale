@@ -80,8 +80,8 @@ p {
 }
 
 .action-change {
+    min-width: 160px;
     font-size: 13px !important;
-    padding-right: 60px;
 }
 
 .word-item {
@@ -198,7 +198,7 @@ p {
 
 .event_list_mobile {
     position: relative;
-    width: 100%;
+    width: 100vw;
     overflow-x: scroll;
 }
 
@@ -341,4 +341,6 @@ p {
 }
 .nav-item{
     padding-left: 40px;
+}
+.event_list_mobile{
 }

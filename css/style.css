@@ -9167,9 +9167,7 @@ body {
     .mobile__none{
         display: none !important;
     }
-    .event_list_mobile{
-        width: 100% !important;
-    }
+   
     .text-slime-chronicle{
         font-size: 13px;
         color: #FFFFFF;
@@ -9191,9 +9189,7 @@ body {
 
 }
 @media screen and (max-width: 767px) {
-    .event_list_mobile{
-        width: 300px !important;
-    }
+  
     .title-sections-mobile{
         font-size: 48px !important;
     }
