@@ -9190,7 +9190,9 @@ body {
 
 }
 @media screen and (max-width: 767px) {
-   
+    .col-8.mt-5.full_box{
+        margin-top:2rem !important
+    }
     .title-sections-mobile{
         font-size: 48px !important;
     }
@@ -9198,12 +9200,16 @@ body {
         font-size: 16px !important;
     }
     .text_blog_title{
+        font-weight: 600 !;
         font-size: 24px !important;
     }
     .fun_text p{
         font-size: 18px !important;
         margin-bottom: 0;
         line-height: 30px;
+    }
+    .ladi-paragraph-mobile{
+        font-size: 20px !important;
     }
 
 }
