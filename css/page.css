@@ -120,9 +120,14 @@ p {
 }
 
 .fun_text p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 16px;
     opacity: 0.8;
+ 
+}
+
+p.mt-3{
+   line-height: 26px;
 }
 
 .title-sections-mobile {
@@ -232,7 +237,7 @@ p {
 
 .active_event {
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
     background: linear-gradient(90deg, #8F55CA 0%, rgba(170, 132, 208, 0.609375) 43.23%, rgba(217, 217, 217, 0) 100%);
     opacity: 1;
