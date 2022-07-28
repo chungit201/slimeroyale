@@ -9231,13 +9231,16 @@ body {
 
 }
 
-@media(min-width:1080px) {
-    .carousel-indicators [data-bs-target] {
+.carousel-indicators [data-bs-target]{
+    background-color: transparent !important;
+}
+
+@media(min-width:769px) {
+    .slier_page [data-bs-target] {
         box-sizing: none !important;
         flex: none !important;
-        height: 17px !important;
-
-        height: 17px !important;
+        width: 18px !important;
+        height: 18px !important;
         padding: 0;
         margin-right: 0;
         margin-left: 3px;
@@ -9250,9 +9253,18 @@ body {
         opacity: 1 !important;
         transition: opacity .6s ease;
     }
+    .slier_page .active {
+        background-image: url(../images/Rounded\ Rectangle\ 7\ copy\ 2\ 1.png) !important;
+    }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 480px){
+
+  }
+
+@media screen and (max-width: 769px) {
     .col-8.mt-5.full_box {
         margin-top: 2rem !important
     }
@@ -9322,16 +9334,22 @@ body {
     }
     .slime_chornmm .active .text_show_ev{
         background-image: url(../images/Group\ 1539.png) !important;
-    
         background-size: cover;
         background-repeat: no-repeat;
         opacity: 1;
     }
 
-    .carousel-indicators [data-bs-target] {
+    .slier_page .active {
+        background-image: url(../images/Rounded\ Rectangle\ 7\ copy\ 2\ 1.png) !important;
+    }
+
+    .slier_page [data-bs-target] {
         box-sizing: content-box;
         flex: none !important;
         cursor: pointer;
+        width: 20px;
+        height: 20px;
+        /* background-image: url(../images/Ellipse\ 6\ copy\ 3\ 10.png) !important; */
         background-color: rgba(255, 255, 255, 0) !important;
         background-clip: padding-box;
         border: 0;
