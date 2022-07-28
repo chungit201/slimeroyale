@@ -117,7 +117,6 @@ video {
     border: 0;
     outline: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -176,6 +175,8 @@ table {
 .ladi-html em {
     font-style: italic
 }
+
+
 
 .ladi-html a {
     text-decoration: underline
@@ -9194,6 +9195,79 @@ body {
 }
 
 @media screen and (max-width: 1020px) {
+    .slime_chornmm {
+        min-width: 100vw;
+        height: 70px;
+        overflow-x: scroll;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        background: radial-gradient(92.57% 92.57% at 50% 50%, rgba(255, 255, 255, 0.2967) 0%, rgba(255, 255, 255, 0) 81.17%);
+    }
+
+    .slime_chornmm  {
+        top: 10px;
+    }
+
+    .text_show_ev {
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    .slime_chornmm[data-bs-target]{
+        text-indent: 1 !important;
+    }
+    .slime_chornmm .active .text_show_ev{
+        background-image: url(../images/Group\ 1539.png) !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 1;
+    }
+
+    .slier_page .active {
+        background-image: url(../images/Rounded\ Rectangle\ 7\ copy\ 2\ 1.png) !important;
+    }
+
+    .slier_page [data-bs-target] {
+        box-sizing: content-box;
+        flex: none !important;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        /* background-image: url(../images/Ellipse\ 6\ copy\ 3\ 10.png) !important; */
+        background-color: rgba(255, 255, 255, 0) !important;
+        background-clip: padding-box;
+        border: 0;
+        display: flex;
+        justify-content: space-between;
+        opacity: 1 !important;
+        transition: opacity .6s ease;
+    }
+    .w-100.text_show_ev {
+        margin-right: 50px;
+        min-width: 150px;
+    }
+    .slime_chornmm_item.text-light.text-center.d-flex.align-items-center .active{
+        margin-right: 100px !important;
+    }
+
+    .slime_chornmm_item.text-light.text-center.d-flex.align-items-center {
+        margin-top: 12px;
+        margin-right: 100px !important;
+        line-height: none !important;
+    }
+    .carousel-indicators.slime_chornmm {
+        min-width: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slime_chornmm {
+        min-width: 100vw;
+        height: 90px;
+        overflow-x: scroll;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        background: radial-gradient(92.57% 92.57% at 50% 50%, rgba(255, 255, 255, 0.2967) 0%, rgba(255, 255, 255, 0) 81.17%);
+    }
     .col-8.mt-5.full_box {
         margin-top: 5rem !important;
     }
@@ -9236,6 +9310,7 @@ body {
 }
 
 @media(min-width:769px) {
+    
     .slier_page_pc [data-bs-target] {
         box-sizing: none !important;
         flex: none !important;
@@ -9359,10 +9434,17 @@ body {
         transition: opacity .6s ease;
     }
     .w-100.text_show_ev {
-        min-width: 100px;
+        margin-right: 50px;
+        min-width: 150px;
     }
+    .slime_chornmm_item.text-light.text-center.d-flex.align-items-center .active{
+        margin-right: 100px !important;
+    }
+
     .slime_chornmm_item.text-light.text-center.d-flex.align-items-center {
         margin-top: 12px;
+        margin-right: 100px !important;
+        line-height: none !important;
     }
     .carousel-indicators.slime_chornmm {
         min-width: 100px;
