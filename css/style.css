@@ -9164,6 +9164,10 @@ body {
 /* mobile */
 @media screen and (min-width:(1020px)) {
 
+    .slime_desc_pc{
+        font-size: 38px;
+    }
+
     .carousel-indicators .active {
         background-image: url(../images/Rounded\ Rectangle\ 7\ copy\ 2\ 1.png) !important;
         width: 15px;
@@ -9324,6 +9328,7 @@ body {
 
     .slime_desc {
         font-size: 24px !important;
+        line-height: 36px !important;
     }
 
     .word_text {

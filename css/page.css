@@ -6,10 +6,12 @@ body {
 p {
     font-family: 'Quicksand';
 }
-
-.text-center p {
-    line-height: 24px !important;
+.slime_desc_pc{
+    font-size: 18px;
+    color:  #FFFFFF;
+    line-height: 1.5rem;
 }
+
 
 .ladi-paragraph-mobile {
     font-family: 'Nunito', sans-serif;
@@ -127,7 +129,8 @@ p {
 }
 .slime_desc{
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.5rem;
 }
 
 
