@@ -125,11 +125,11 @@ p {
     opacity: 0.8;
  
 }
-
-p.mt-3{
-   line-height: 26px;
-   font-size: 24px;
+.slime_desc{
+    color: #FFFFFF;
+    font-size: 18px;
 }
+
 
 .title-sections-mobile {
     letter-spacing: 0.02em;
