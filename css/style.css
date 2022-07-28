@@ -9236,7 +9236,7 @@ body {
 }
 
 @media(min-width:769px) {
-    .slier_page [data-bs-target] {
+    .slier_page_pc [data-bs-target] {
         box-sizing: none !important;
         flex: none !important;
         width: 18px !important;
@@ -9253,7 +9253,7 @@ body {
         opacity: 1 !important;
         transition: opacity .6s ease;
     }
-    .slier_page .active {
+    .slier_page_pc .active {
         background-image: url(../images/Rounded\ Rectangle\ 7\ copy\ 2\ 1.png) !important;
     }
 }

@@ -296,10 +296,8 @@ p {
         opacity: .5;
         transition: opacity .6s ease;
     }
-    .carousel-indicators .active {
+    .slier_page.active {
         background-image: url(../images/Rounded\ Rectangle\ 7\ copy\ 2\ 1.png) !important;
-        width: 15px;
-        height: 18px;
         background-size: cover;
     }
 }
