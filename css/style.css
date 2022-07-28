@@ -9187,7 +9187,7 @@ body {
 }
 
 @media screen and (max-width: 1020px) {
-
+   
     .mobile__none {
         display: none !important;
     }
@@ -9311,7 +9311,23 @@ body {
 }
 
 @media(min-width:769px) {
-    
+.w-100.text_show_ev {
+    margin-right: 53px;
+    min-width: 185px;
+}
+
+    .word_text{
+        font-size: 24px !important;
+    }
+    .text_show_ev {
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+    .chievement_text{
+        font-size: 36px!important;
+        font-weight: 500!important;
+        color: #FFFFFF;
+    }
     .slier_page_pc [data-bs-target] {
         box-sizing: none !important;
         flex: none !important;
@@ -9340,7 +9356,12 @@ body {
 
   }
 
+  
+
 @media screen and (max-width: 769px) {
+    .word-item{
+        font-size: 13px!important;
+    }
     .col-8.mt-5.full_box {
         margin-top: 2rem !important
     }
@@ -9356,7 +9377,11 @@ body {
     .text-light {
         font-size: 12px !important;
     }
-
+    .chievement_text{
+        font-size: 18px;
+        font-weight: 500!important;
+        color: #FFFFFF;
+    }
     .text_blog_title {
         font-size: 24px !important;
     }
