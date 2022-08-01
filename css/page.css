@@ -381,3 +381,8 @@ p {
 .active_color{
     opacity: 1 !important;
 }
+#VIDEO1353_player{
+    width: 101%;
+    height: 94vh;
+    object-fit: cover;
+}
