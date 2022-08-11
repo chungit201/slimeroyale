@@ -141,16 +141,14 @@
           </div>
           <div onclick="clickBtnDownload1()" style="cursor: pointer;"
             class="col-3 btn-dowload-top d-flex align-items-center wow animate__animated animate__fadeInUp">
-            <div style="position: relative;" class="d-flex justify-content-center">
-              <a  class="d-flex justify-content-center link_download" href="https://files.slimeroyale.com/games/SlimeMainnet_Android_V0.2.0.6.apk" target="_blank">
-                <img width="80%" src="./images/btn_download.png" alt="">
-                <div class="w-100 d-flex justify-content-center"
-                  style="position: absolute; bottom: 50%;transform: translateY(50%);">
-                  <span class="text-light btn_download_text mx-2" style="font-weight: 700;font-size: 24px;"> 
-                    REGISTER NOW
-                  </span>
-                </div>
-              </a>
+            <div onclick="openPopup()" style="position: relative;" class="d-flex justify-content-center">
+              <img width="80%" src="./images/btn_download.png" alt="">
+              <div class="w-100 d-flex justify-content-center"
+                style="position: absolute; bottom: 50%;transform: translateY(50%);">
+                <span class="text-light btn_download_text mx-2" style="font-weight: 700;font-size: 24px;">
+                  REGISTER NOW
+                </span>
+              </div>
             </div>
           </div>
           <div class="col-3  wow animate__animated animate__fadeInRight">
@@ -172,11 +170,12 @@
         <div class="row w-100 d-flex justify-content-center">
           <div style="cursor: pointer;"
             class="col-5 btn-dowload-top d-flex align-items-center wow animate__animated animate__fadeInUp">
-            <a href="https://files.slimeroyale.com/games/SlimeMainnet_Android_V0.2.0.6.apk" target="_blank" style="position: relative;" class="d-flex justify-content-center link_download">
+            <a onclick="openPopup()" 
+              style="position: relative;" class="d-flex justify-content-center link_download">
               <img width="80%" src="./images/btn_download.png" alt="">
               <div class="w-100 d-flex justify-content-center"
                 style="position: absolute; bottom: 50%;transform: translateY(50%);">
-                <span class="text-light btn_download_text mx-2" style="font-weight: 700;"> Download game</span>
+                <span class="text-light btn_download_text mx-2" style="font-weight: 700;"> REGISTER NOW</span>
               </div>
             </a>
           </div>
@@ -1547,12 +1546,12 @@
         </div>
         <a href="https://files.slimeroyale.com/games/SlimeMainnet_Android_V0.2.0.6.apk" target="_blank">
 
-        <div onclick="clickBtnDownload2()" id="IMAGE107" class='ladi-element'>
+          <div onclick="clickBtnDownload2()" id="IMAGE107" class='ladi-element'>
             <div class='ladi-image'>
               <div class="ladi-image-background"></div>
             </div>
-        </div>
-      </a>
+          </div>
+        </a>
 
       </div>
     </div>
@@ -1617,133 +1616,700 @@
               </div>
 
               <div class="w-100 d-flex justify-content-center" style="position: absolute; bottom: 10px; z-index: 10;">
-                <img src="./images/Star 1.png" alt=""
+                <img src="./images/Star 1.png" alt="" </div>
+                <div style="position:absolute ;top: -9px;z-index: 1;right: -7px;"></div>
               </div>
-              <div style="position:absolute ;top: -9px;z-index: 1;right: -7px;"></div>
             </div>
           </div>
-        </div>
-        <p class="text-light text-center mt-5" style="font-weight:500 ;">& more exclusive benefits</p>
-        <div class="row pt-3" style="padding-bottom: 3rem;">
-          <div class="col-12">
-            <img width="100%" src="./images/group-slime.webp" alt="">
-          </div>
-          <div onclick="clickBtnDownload2()" class="d-flex justify-content-center">
-            <div  class="col-4 ">
-              <a href="https://files.slimeroyale.com/games/SlimeMainnet_Android_V0.2.0.6.apk" target="_blank">
-                <img  class="btn-dowload-end" width="100%" src="./images/btn-download-game-2.png" alt="">
-              </a>
+          <p class="text-light text-center mt-5" style="font-weight:500 ;">& more exclusive benefits</p>
+          <div class="row pt-3" style="padding-bottom: 3rem;">
+            <div class="col-12">
+              <img width="100%" src="./images/group-slime.webp" alt="">
+            </div>
+            <div onclick="clickBtnDownload2()" class="d-flex justify-content-center">
+              <div class="col-4 ">
+                <a href="https://files.slimeroyale.com/games/SlimeMainnet_Android_V0.2.0.6.apk" target="_blank">
+                  <img class="btn-dowload-end" width="100%" src="./images/btn-download-game-2.png" alt="">
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="backdrop-popup" class="backdrop-popup"></div>
-    <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
-    <div id="lightbox-screen" class="lightbox-screen"></div>
-    <script>
-      function clickBtnDownload1() {
-        fbq('click', 'Download_Open_Beta_Game');
-        gtag('event', 'click', { 'event_category': 'Open_Beta_Game', 'event_label': 'button_download_HM_1' });
-      }
-      function clickBtnDownload2() {
-        gtag('event', 'click', { 'event_category' : 'Open_Beta_Game', 'event_label': 'button_download_HM_2' });
-        fbq('click', 'Download_Open_Beta_Game 2');
-      }
-    </script>
-    <script>
-      let classList = []
-      const activeSliederSlime = document.querySelectorAll('.special_slime');
-      const activeSliederSlimeMobile = document.querySelectorAll('.special_slime_mobile');
-      console.log(activeSliederSlime);
 
-      function handleActive(value) {
-        activeSliederSlime.forEach(item => {
-          console.log(item);
-          item.classList.remove("active")
-        })
-        classList = activeSliederSlime[value].classList.add("active")
-        // console.log(classList.contains("active"));
+    <div class="cover">
+      <div class="box-popup">
+        <div class="popup" id="popup-send-code" style="display: block">
+          <p style="margin-bottom: 30px;">
+            <span style="font-size: 23px;color: #580A0A;"><b data-i18n="free-to">Free-to-Earn Registration</b></span>
+            <br>
+          </p>
+
+          <div class="message-err" style="display: none" id="message-wallet-err">
+            <img class="lazy" src="./images/web/img_1.webp" alt="" />
+            <p id="wallet-err" style="color: #B84242">
+              This is required information.
+            </p>
+          </div>
+
+          <div>
+            <input class="input-slime" type="text" name="walletAddress" id="walletAddress"
+              placeholder="Your BEP20 address" />
+            <div class="message-err" style="display: none" id="message-email-err">
+              <img class="lazy"  src="./images/web/img_1.webp" alt="" />
+              <p id="email-err" style="color: #B84242">
+                This is required information.
+              </p>
+            </div>
+            <input class="input-slime" name="email" id="email" type="text" placeholder="Your email" />
+          </div>
+
+          <div
+            style="margin-bottom: 20px; margin-top: 10px; position: relative; padding-left: 40px; text-align: left;font-size: 16px;">
+            <input type="checkbox" name="" id="checkbox" style="position: absolute; top: 5px; left: 20px">
+            <label for="checkbox" class="mt-1">
+              <span data-i18n="agree">I agree to the</span>
+              <a href="https://whitepaper.slimeroyale.com/privacy-policy" style="color: black" target="_blank">
+                <span style="text-decoration: underline" data-i18n="privacy-policy">Privacy
+                  Policy</span>
+              </a>
+              <span data-i18n="and">and</span>
+              <a href="https://whitepaper.slimeroyale.com/terms-of-use" style="color: black" target="_blank">
+                <span style="text-decoration: underline" data-i18n="terms-of-use">Terms of Use</span>
+              </a>
+            </label>
+          </div>
+          <button data-i18n="register-text" class="btn-slime-no-active" id="btn-send-code-no-active" disabled>
+            Register
+          </button>
+          <button data-i18n="register-text" class="btn-slime-active" id="btn-send-code-active" style="display: none">
+            Register
+          </button>
+
+          <img class="close-popup lazy" src="./images/web/img.webp" onclick="closePopup()" alt="close" />
+        </div>
+
+        <div class="popup" id="popup-confirm-code" style="display: none">
+          <p style="margin-bottom: 10px;">
+            <span style="font-size: 23px;color: #580A0A;"><b data-i18n="free-to">Enter your confirmation code</b></span>
+            <br>
+          </p>
+          <p style="margin-bottom: 20px" data-i18n="verifyEmail-des">
+            Your code is being incubatored...<br>
+            Stay calm and check your email (trash/spam folder).
+          </p>
+          <div class="d-flex justify-content-center">
+            <img class="lazy" src="./images/web/icubator.webp" width="80" style="margin: 0 auto 20px"
+            alt="image popup" />
+          </div>
+          <div class="message-err" style="display: none" id="message-code-err">
+            <img class="lazy" style="left: 50px" src="./images/web/img_1.webp" alt="" />
+            <p id="code-err" style="color: #B84242">
+              This is required information.
+            </p>
+          </div>
+          <input class="input-slime" type="text" name="code" id="code" style="margin-bottom: 20px; max-width: 300px;"
+            placeholder="Enter code" />
+          <button class="btn-slime-no-active" id="btn-confirm-code-no-active" data-i18n="verify-text"
+            style="max-width: 300px;" disabled>
+            Verify
+          </button>
+          <button class="btn-slime-active GTM_FB_Register_Success" data-i18n="verify-text" id="btn-confirm-code-active"
+            style="max-width: 300px; display: none">
+            Verify
+          </button>
+          <p style="margin-top: 10px">
+            <span data-i18n="did-code">Didn’t receive the code?</span>
+            <span id="re-send-code" style="text-decoration: underline; cursor: pointer" data-i18n="try-again">Try
+              again</span>
+          </p>
+          <img class="close-popup lazy" src="./images/web/img.webp" onclick="closePopup()" alt="close" />
+          <img class="pre-popup lazy" src="./images/web/img_2.webp" onclick="prePopup()" alt="pre" />
+        </div>
+
+        <div class="popup" id="popup-success" style="display:block; padding-top: 50px; padding-bottom: 50px">
+          <h2 data-i18n="register-success" class="register-success">Successful registration!</h2>
+          <p style="margin-bottom: 20px; font-size: 16px; margin-top: 30px" data-i18n="success-text">
+            Please check your email for detailed guideline <br /> on My Circle Feature.
+          </p>
+          <img class="close-popup lazy" onclick="closePopup()" src="./images/web/img.webp" alt="close" />
+          <div target="_blank">
+            <a href="https://t.me/SlimeRoyale">
+              <button style="height: 100%;padding: 15px" data-i18n="join-tele" class="btn-slime-active">
+                Join Telegram Community
+                for Free Gamer
+              </button>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="popup" id="popup-re-send-code" style="display: none">
+          <p style="margin-bottom: 10px;">
+            <span style="font-size: 23px" data-i18n="more-chance"><b>One more chance! </b></span>
+          </p>
+          <p style="margin-bottom: 20px;">
+            <span style="font-size: 16px; margin-top: 10px" data-i18n="make-sure">
+              Make sure all information is correct.
+            </span>
+          </p>
+          <div class="message-err" style="display: none" id="message-re-wallet-err">
+            <img class="lazy" src="./Images/webp/img_1.webp" alt="" />
+            <p id="wallet-re-err" style="color: #B84242">
+              This is required information.
+            </p>
+          </div>
+          <input class="input-slime" type="text" name="walletAddress" id="reWalletAddress"
+            placeholder="Your BEP20 address" />
+          <div class="message-err" style="display: none" id="message-re-email-err">
+            <img class="lazy" src="./Images/webp/img_1.webp" alt="" />
+            <p id="email-re-err" style="color: #B84242">
+              This is required information.
+            </p>
+          </div>
+          <input class="input-slime" name="email" id="re-email" type="text" placeholder="Your email" />
+
+          <button data-i18n="verification-code" class="btn-slime-no-active" id="btn-re-send-code-no-active" disabled>
+            Get verification code
+          </button>
+          <button class="btn-slime-active" id="btn-re-send-code-active" style="display: none"
+            data-i18n="verification-code">
+            Get verification code
+          </button>
+
+          <img class="close-popup lazy" src="./Images/webp/img.webp" onclick="closePopup()" alt="close" />
+        </div>
+
+        <div class="popup" id="popup-register-now" style="display: none">
+          <div class="message-register-err"
+            style="display: none; padding-left: 10px; position: relative; margin-bottom: 20px"
+            id="message-register-err">
+            <img class="lazy" style="left: 20px; width: 23px; top: 0; position: absolute;"
+              src="./Images/webp/img_1.webp" alt="" />
+            <p id="register-err" style="color: #B84242">
+              This is required information.
+            </p>
+          </div>
+          <div class="message-err" style="display: none" id="message-email-register">
+            <img class="lazy" src="./Images/webp/img_1.webp" alt="" />
+            <p id="email-register-err" style="color: #B84242">
+              This is required information.
+            </p>
+          </div>
+          <input class="input-slime" type="text" name="code" id="register-email" placeholder="Your email" />
+
+          <div class="message-err" style="display: none" id="message-register-code-err">
+            <img class="lazy" src="./Images/webp/img_1.webp" alt="" />
+            <p id="code-register-err" style="color: #B84242">
+              This is required information.
+            </p>
+          </div>
+          <input class="input-slime" name="code" id="register-code" type="text" placeholder="Enter code" />
+
+          <button class="btn-slime-no-active" id="btn-register-no-active" disabled>
+            Register
+          </button>
+          <button class="btn-slime-active" id="btn-register-active" style="display: none">
+            Register
+          </button>
+
+          <img class="close-popup lazy" src="./Images/webp/img.webp" onclick="closePopup()" alt="close" />
+        </div>
+
+        <div class="popup-loading" id="popup-loading"
+          style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; display: none">
+          <img class="lazy" src="./images/loading.gif" id="loading"
+            style="position: absolute; width: 100px; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%)" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="backdrop-popup" class="backdrop-popup"></div>
+  <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
+  <div id="lightbox-screen" class="lightbox-screen"></div>
+  <script src="./js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function clickBtnDownload1() {
+      fbq('click', 'Download_Open_Beta_Game');
+      gtag('event', 'click', { 'event_category': 'Open_Beta_Game', 'event_label': 'button_download_HM_1' });
+    }
+    function clickBtnDownload2() {
+      gtag('event', 'click', { 'event_category': 'Open_Beta_Game', 'event_label': 'button_download_HM_2' });
+      fbq('click', 'Download_Open_Beta_Game 2');
+    }
+  </script>
+  <script>
+    $('#email').on('change keyup', function () {
+      checkEmail('#email', '#message-email-err', '#email-err');
+      checkActive();
+      $('#re-email').val($('#email').val());
+    });
+
+    $('#register-email').on('change keyup', function () {
+      checkEmail('#register-email', '#message-email-register', '#email-register-err');
+      checkRegisterActive();
+    });
+
+    $('#re-email').on('change keyup', function () {
+      checkEmail('#re-email', '#message-re-email-err', '#email-re-err');
+      checkReActive();
+    });
+
+    $('#walletAddress').on('change keyup', function () {
+      checkWallet('#walletAddress', '#message-wallet-err', '#wallet-err');
+      $('#reWalletAddress').val($('#walletAddress').val());
+      checkActive();
+    });
+
+    $('#reWalletAddress').on('change keyup', function () {
+      checkWallet('#reWalletAddress', '#message-re-wallet-err', '#wallet-re-err');
+      checkReActive();
+    });
+
+    $('#checkbox').on('click', function () {
+      checkActive();
+    });
+
+    $('#code').on('change keyup', function () {
+      const check = checkCode('#code', '#message-code-err', '#code-err');
+      if (check === true) {
+        $('#btn-confirm-code-no-active').hide();
+        $('#btn-confirm-code-active').show()
+      } else {
+        $('#btn-confirm-code-no-active').show();
+        $('#btn-confirm-code-active').hide()
       }
+    });
 
-      function handleActiveMobile(value) {
-        activeSliederSlimeMobile.forEach(item => {
-          console.log(item);
-          item.classList.remove("active")
-        })
-        classList = activeSliederSlimeMobile[value].classList.add("active")
-        // console.log(classList.contains("active"));
+    $('#register-code').on('change keyup', function () {
+      checkCode('#register-code', '#message-register-code-err', '#code-register-err');
+      checkRegisterActive();
+    });
+
+    function checkEmail(input, message, span) {
+      let p = $(input).val();
+      let regex = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+      if (p.length === 0) {
+        $(input).removeClass('msg-success').addClass('msg-error');
+        $(span).html('This is required information. ');
+        $(message).show();
       }
-      const changImageEvent = document.getElementById('select_event');
-      async function handleSlimeEvent(index, data) {
-        const activeDefaule = document.querySelectorAll('.active_event')
-        activeDefaule.forEach(item => {
-          item.classList.remove('active_event');
-        })
+      if (0 < p.length && p.length <= 50 && !regex.test(p)) {
+        $(input).removeClass('msg-success').addClass('msg-error');
+        $(span).html('Please enter a valid email.');
+        $(message).show();
+      }
+      if (0 < p.length && regex.test(p)) {
+        $(input).removeClass('msg-error').addClass('msg-success');
+        $(span).html('');
+        $(message).hide();
 
+        return true;
+      } else {
+        return false;
+      }
+    }
 
-        data.classList.add('active_event')
-        changImageEvent.style.backgroundImage = ""
-        console.log(index);
-        if (index == 0) {
-          changImageEvent.src = "/images/ino-event.webp"
-        } else if (index == 1) {
-          changImageEvent.src = "./images/Marketplace.webp"
-        } else if (index == 2) {
-          changImageEvent.src = "./images/closed-beta-game-homepage.webp"
-        } else if (index == 3) {
-          changImageEvent.src = "./images/SCE-token.webp"
-        } else if (index == 4) {
-          changImageEvent.src = "./images/breeding-homepage.webp"
+    function checkWallet(input, message, span) {
+      let p = $(input).val();
+      if (p.length === 0) {
+        $(input).removeClass('msg-success').addClass('msg-error');
+        $(span).html('This is required information.');
+        $(message).show();
+      }
+      if (p.length > 0) {
+        $(input).removeClass('msg-error').addClass('msg-success');
+        $(span).html('');
+        $(message).hide();
+
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function checkCode(input, message, span) {
+      let code = $(input).val();
+      if (code.length === 0) {
+        $(input).removeClass('msg-success').addClass('msg-error');
+        $(span).html('This is required information.');
+        $(message).show();
+        return false;
+      } else {
+        $(input).removeClass('msg-error').addClass('msg-success');
+        $(span).html('');
+        $(message).hide();
+        return true;
+      }
+    }
+
+    function checkActive() {
+      let a = $('#email').val();
+      console.log("aaa", a);
+      let b = $('#walletAddress').val();
+      let regex = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+
+      if (a.length > 0 && regex.test(a) && b.length > 0 && $('#checkbox').prop('checked')) {
+        $('#btn-send-code-no-active').hide();
+        $('#btn-send-code-active').show()
+      } else {
+        $('#btn-send-code-no-active').show();
+        $('#btn-send-code-active').hide()
+      }
+    }
+
+    function checkReActive() {
+      let a = $('#re-email').val();
+      let b = $('#reWalletAddress').val();
+      let regex = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+
+      if (a.length > 0 && regex.test(a) && b.length > 0) {
+        $('#btn-re-send-code-no-active').hide();
+        $('#btn-re-send-code-active').show()
+      } else {
+        $('#btn-re-send-code-no-active').show();
+        $('#btn-re-send-code-active').hide()
+      }
+    }
+
+    function checkRegisterActive() {
+      let a = $('#register-email').val();
+      let b = $('#register-code').val();
+      let regex = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+
+      if (a.length > 0 && regex.test(a) && b.length > 0) {
+        $('#btn-register-no-active').hide();
+        $('#btn-register-active').show()
+      } else {
+        $('#btn-register-no-active').show();
+        $('#btn-register-active').hide()
+      }
+    }
+
+    $('#btn-send-code-active').on('click', function () {
+      sendCode($('#email').val(), $('#walletAddress').val());
+    });
+
+    $('#re-send-code').on('click', function () {
+      $('.popup').hide();
+      $('#popup-re-send-code').show();
+      checkReActive();
+    });
+
+    $('#btn-re-send-code-active').on('click', function () {
+      sendCode($('#re-email').val(), $('#reWalletAddress').val());
+    });
+
+    function sendCode(email, walletAddress) {
+      gtag('event', 'click', { 'event_category': 'registration', 'event_label': 'button_register' });
+      $('#popup-loading').show();
+      const currentUrl = window.location.href;
+      const url = new URL(currentUrl);
+      const data = {
+        email: email,
+        walletAddress: walletAddress,
+        utm_source: url.searchParams.get("utm_source"),
+        utm_medium: url.searchParams.get("utm_medium"),
+      }
+      $.ajax({
+        url: "https://slimeroyale.com/api/v1/user/send-code-verify",
+        method: "POST",
+        contentType: 'application/json',
+        dataType: "json",
+        data: JSON.stringify(data),
+        success: function (e) {
+          $('.popup').hide();
+          $('#popup-loading').hide();
+          $('#popup-confirm-code').show();
         }
-      }
-      const activeEventMobile = document.querySelectorAll(".event_mobile")
-      const active_chon = document.querySelectorAll(".action-change");
-      const text_show_ev = document.querySelectorAll(".text_show_ev");
-      const handleSlimeEventMobile = (value, box) => {
-        active_chon.forEach(item => {
-          console.log(item);
-          item.classList.remove("action-active-slime")
-        })
-        box.classList.add('action-active-slime');
+      })
+    }
 
-        activeEventMobile.forEach(item => {
-          item.classList.remove("active")
-        })
-        activeEventMobile[value].classList.add("active");
-
-        text_show_ev.forEach(item => {
-          console.log(item);
-          item.classList.remove("active_color")
-        })
-        text_show_ev[value].classList.add("active_color")
+    $('#btn-register-active').on('click', function () {
+      const data = {
+        email: $('#register-email').val(),
+        code: $('#register-code').val()
       }
+      confirmCode(data, '#message-register-err', '#register-err');
+    });
+
+    $('#btn-confirm-code-active').on('click', function () {
+      const data = {
+        email: $('#email').val(),
+        code: $('#code').val()
+      }
+      confirmCode(data, '#message-code-err', '#code-err');
+    });
+
+    function confirmCode(data, message, span) {
+      $('#popup-loading').show();
+      $.ajax({
+        url: "https://slimeroyale.com/api/v1/user/check-code-verify",
+        method: "POST",
+        dataType: "json",
+        contentType: 'application/json',
+        data: JSON.stringify(data),
+        success: function (e) {
+          $('#popup-loading').hide();
+          if (e.statusCode === 200) {
+            $('.popup').hide();
+            $('#popup-success').show();
+            gtag('event', 'show', { 'event_category': 'registration', 'event_label': 'register_success' });
+          } else {
+            $(span).html('Oops, please check your code and try again.');
+            $(message).show();
+          }
+        }
+      })
+    }
+
+    $(document).mouseup(function (e) {
+      var container = $("#popup-success");
+      if (!container.is(e.target) && container.has(e.target).length === 0 && $('#popup-success').is(':visible')) {
+        closePopup();
+      }
+    });
+
+
+    (function () {
+      let YouTubeContainers = document.querySelectorAll(".embed-youtube-header");
+
+      // Iterate over every YouTube container you may have
+      for (let i = 0; i < YouTubeContainers.length; i++) {
+        let container = YouTubeContainers[i];
+        let imageSource = "./Images/webp/banner_preview.webp";
+
+        // Load the Thumbnail Image asynchronously
+        let image = new Image();
+        image.src = imageSource;
+        image.addEventListener("load", function () {
+          container.appendChild(image);
+        });
+
+        // When the user clicks on the container, load the embedded YouTube video
+        container.addEventListener("click", function () {
+          let iframe = document.createElement("iframe");
+
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute("width", "840");
+          iframe.setAttribute("height", "470");
+          iframe.setAttribute("allowfullscreen", "");
+          iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+          // Important: add the autoplay GET parameter, otherwise the user would need to click over the YouTube video again to play it
+          iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.videoId + "?rel=0&showinfo=0&autoplay=1");
+
+          // Clear Thumbnail and load the YouTube iframe
+          this.innerHTML = "";
+          this.appendChild(iframe);
+        });
+      }
+    })();
+
+    (function () {
+      let YouTubeContainers = document.querySelectorAll(".embed-youtube-mobile");
+
+      // Iterate over every YouTube container you may have
+      for (let i = 0; i < YouTubeContainers.length; i++) {
+        let container = YouTubeContainers[i];
+        let imageSource = "./Images/webp/banner_preview.webp";
+
+        // Load the Thumbnail Image asynchronously
+        let image = new Image();
+        image.src = imageSource;
+        image.addEventListener("load", function () {
+          container.appendChild(image);
+        });
+
+        // When the user clicks on the container, load the embedded YouTube video
+        container.addEventListener("click", function () {
+          let iframe = document.createElement("iframe");
+
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute("width", "350");
+          iframe.setAttribute("height", "196");
+          iframe.setAttribute("allowfullscreen", "");
+          iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+          // Important: add the autoplay GET parameter, otherwise the user would need to click over the YouTube video again to play it
+          iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.videoId + "?rel=0&showinfo=0&autoplay=1");
+
+          // Clear Thumbnail and load the YouTube iframe
+          this.innerHTML = "";
+          this.appendChild(iframe);
+        });
+      }
+    })();
+
+    // $(document).ready(function () {
+    //     let showBanner = setInterval(IntervelBanner, 1000);
+    //     let timeShowBanner = 0;
+    //     function IntervelBanner() {
+    //         ++timeShowBanner;
+    //         if (timeShowBanner === 2) {
+    //             $('#banner-preview').html("" +
+    //                 "<video autoplay muted loop preload width=\"100%\" height=\"40%\">\n" +
+    //                 "            <source src=\"./Images/header_preview.mp4\" type=\"video/mp4\"/>\n" +
+    //                 "        </video>");
+    //             clearInterval(showBanner);
+    //         }
+    //     }
+    // });
+
+    const section_2_pc = bodymovin.loadAnimation({
+      container: document.getElementById('image-section-2-pc'),
+      path: './json/Ruong.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: "ruong",
+    });
+
+    const section_2_mobile = bodymovin.loadAnimation({
+      container: document.getElementById('image-section-2-mobile'),
+      path: './json/Ruong.json',
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      name: "ruong",
+    });
+
+
+    //iframe video
+    (function () {
+      handleDetectVideoOnMobileAndPc('-pc')
+      handleDetectVideoOnMobileAndPc('-mobile')
+    })();
+
+    function handleDetectVideoOnMobileAndPc(type) {
+      window.dataVideoIDYoutube = '-dS1x17d-4I';
+      let YouTubeContainers = document.querySelector(".embed-youtube-game-media" + type);
+      let container = YouTubeContainers;
+      let imageSource = "./Images/webp/videoPreview.webp";
+      let image = new Image();
+      image.src = imageSource;
+      image.style.width = "100%";
+      image.style.height = "100%";
+      image.addEventListener("load", function () {
+        container.appendChild(image);
+      });
+
+      container.addEventListener("click", function () {
+        let videoDome = document.querySelector('#video-game-media' + type);
+        let iframe = document.createElement("iframe");
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("id", "video-game-media" + type);
+        iframe.setAttribute("height", "100%");
+        iframe.setAttribute("width", "100%");
+        iframe.setAttribute("allowfullscreen", "");
+        iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+        iframe.setAttribute("src", "https://www.youtube.com/embed/" + window.dataVideoIDYoutube + "?rel=0&showinfo=0c&autoplay=1");
+        this.innerHTML = "";
+        this.appendChild(iframe);
+      });
+    }
+
+    let classList = []
+    const activeSliederSlime = document.querySelectorAll('.special_slime');
+    const activeSliederSlimeMobile = document.querySelectorAll('.special_slime_mobile');
+    console.log(activeSliederSlime);
+
+    function handleActive(value) {
+      activeSliederSlime.forEach(item => {
+        console.log(item);
+        item.classList.remove("active")
+      })
+      classList = activeSliederSlime[value].classList.add("active")
+      // console.log(classList.contains("active"));
+    }
+
+    function handleActiveMobile(value) {
+      activeSliederSlimeMobile.forEach(item => {
+        console.log(item);
+        item.classList.remove("active")
+      })
+      classList = activeSliederSlimeMobile[value].classList.add("active")
+      // console.log(classList.contains("active"));
+    }
+    const changImageEvent = document.getElementById('select_event');
+    async function handleSlimeEvent(index, data) {
+      const activeDefaule = document.querySelectorAll('.active_event')
+      activeDefaule.forEach(item => {
+        item.classList.remove('active_event');
+      })
+
+
+      data.classList.add('active_event')
+      changImageEvent.style.backgroundImage = ""
+      console.log(index);
+      if (index == 0) {
+        changImageEvent.src = "/images/ino-event.webp"
+      } else if (index == 1) {
+        changImageEvent.src = "./images/Marketplace.webp"
+      } else if (index == 2) {
+        changImageEvent.src = "./images/closed-beta-game-homepage.webp"
+      } else if (index == 3) {
+        changImageEvent.src = "./images/SCE-token.webp"
+      } else if (index == 4) {
+        changImageEvent.src = "./images/breeding-homepage.webp"
+      }
+    }
+    const activeEventMobile = document.querySelectorAll(".event_mobile")
+    const active_chon = document.querySelectorAll(".action-change");
+    const text_show_ev = document.querySelectorAll(".text_show_ev");
+    const handleSlimeEventMobile = (value, box) => {
+      active_chon.forEach(item => {
+        console.log(item);
+        item.classList.remove("action-active-slime")
+      })
+      box.classList.add('action-active-slime');
+
+      activeEventMobile.forEach(item => {
+        item.classList.remove("active")
+      })
+      activeEventMobile[value].classList.add("active");
+
+      text_show_ev.forEach(item => {
+        console.log(item);
+        item.classList.remove("active_color")
+      })
+      text_show_ev[value].classList.add("active_color")
+    }
 
       // const active_img = document.querySelectorAll('.img_btn');
       // console.log(active_img);
       // active_img.forEach(item=>{
       //   console.log(item.classList.);
       // })
-    </script>
-    <style>
+  </script>
+  <style>
 
-    </style>
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-      crossorigin="anonymous"></script>
-    <script id="script_lazyload"
-      type="text/javascript">(function () { var style_lazyload = document.getElementById('style_lazyload'); var docEventScroll = window; var list_element_lazyload = document.querySelectorAll('.ladi-section-background, .ladi-image-background, .ladi-button-background, .ladi-headline, .ladi-video-background, .ladi-countdown-background, .ladi-box, .ladi-frame-background, .ladi-tabs-background, .ladi-survey-option-background, .ladi-survey-option-image, .ladi-banner, .ladi-form-item-background, .ladi-gallery-view-item, .ladi-gallery-control-item, .ladi-spin-lucky-screen, .ladi-spin-lucky-start, .ladi-form-label-container .ladi-form-label-item.image, .ladi-list-paragraph ul li'); for (var i = 0; i < list_element_lazyload.length; i++) { var rect = list_element_lazyload[i].getBoundingClientRect(); if (rect.x == "undefined" || rect.x == undefined || rect.y == "undefined" || rect.y == undefined) { rect.x = rect.left; rect.y = rect.top; } var offset_top = rect.y + window.scrollY; if (offset_top >= window.scrollY + window.innerHeight || window.scrollY >= offset_top + list_element_lazyload[i].offsetHeight) { list_element_lazyload[i].classList.add('ladi-lazyload'); } } if (typeof style_lazyload != "undefined" && style_lazyload != undefined) { style_lazyload.parentElement.removeChild(style_lazyload); } var currentScrollY = window.scrollY; var stopLazyload = function (event) { if (event.type == "scroll" && window.scrollY == currentScrollY) { currentScrollY = -1; return; } docEventScroll.removeEventListener('scroll', stopLazyload); list_element_lazyload = document.getElementsByClassName('ladi-lazyload'); while (list_element_lazyload.length > 0) { list_element_lazyload[0].classList.remove('ladi-lazyload'); } }; var scrollEventPassive = null; try { var opts = Object.defineProperty({}, 'passive', { get: function () { scrollEventPassive = { passive: true }; } }); window.addEventListener('testPassive', null, opts); window.removeEventListener('testPassive', null, opts); } catch (e) { } docEventScroll.addEventListener('scroll', stopLazyload, scrollEventPassive); })();</script>
-    <!--[if lt IE 9]><script src="https://w.ladicdn.com/v2/source/html5shiv.min.js?v=1656664978045"></script><script src="https://w.ladicdn.com/v2/source/respond.min.js?v=1656664978045"></script><![endif]-->
-    <link href="https://fonts.googleapis.com/css?family=Open Sans:bold,regular|Quicksand:bold,regular&display=swap"
-      rel="stylesheet" type="text/css">
-    <link href="https://w.ladicdn.com/v2/source/ladipage.min.css?v=1656664978045" rel="stylesheet" type="text/css">
-    <script src="https://w.ladicdn.com/v2/source/ladipage.vi.min.js?v=1656664978045" type="text/javascript"></script>
-    <script id="script_event_data"
-      type="application/json">{"SECTION1":{"type":"section","option.background_video.video_value":"https://s.ladicdn.com/6276b829a404bc006a89ac25/header_preview-20220714040022.mp4","option.background_video.video_type":"direct","desktop.option.background-style":"video","mobile.option.background-style":"video"},"IMAGE78":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/"}]},"IMAGE93":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://marketplace.slimeroyale.com/marketplace"}]},"IMAGE95":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/bes-inflation-control"}]},"IMAGE96":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/gameplay/the-circle-system"}]},"IMAGE97":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/tokenomic"}]},"IMAGE107":{"type":"image","desktop.style.animation-name":"pulse","desktop.style.animation-delay":"1s","mobile.style.animation-name":"pulse","mobile.style.animation-delay":"1s"},"PARAGRAPH175":{"type":"paragraph","option.data_event":[{"action_type":"action","type":"hidden_show"}]},"CAROUSEL303":{"type":"carousel","desktop.option.carousel_setting.autoplay":true,"desktop.option.carousel_setting.autoplay_time":1,"desktop.option.carousel_crop.width":"6800px","desktop.option.carousel_crop.width_item":"1700px","mobile.option.carousel_setting.autoplay":true,"mobile.option.carousel_setting.autoplay_time":1,"mobile.option.carousel_crop.width":"7320px","mobile.option.carousel_crop.width_item":"1830px"},"PARAGRAPH378":{"type":"paragraph","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/"}]},"PARAGRAPH379":{"type":"paragraph","option.data_event":[{"action_type":"action","type":"link","target":"_self","action":"https://marketplace.slimeroyale.com/marketplace"}]},"CAROUSEL399":{"type":"carousel","desktop.option.carousel_setting.autoplay":true,"desktop.option.carousel_setting.autoplay_time":5,"desktop.option.carousel_crop.width":"9000px","desktop.option.carousel_crop.width_item":"1500px","mobile.option.carousel_setting.autoplay":true,"mobile.option.carousel_setting.autoplay_time":5,"mobile.option.carousel_crop.width":"9000px","mobile.option.carousel_crop.width_item":"1500px"}}</script>
+  </style>
+ 
+  <script id="script_lazyload"
+    type="text/javascript">(function () { var style_lazyload = document.getElementById('style_lazyload'); var docEventScroll = window; var list_element_lazyload = document.querySelectorAll('.ladi-section-background, .ladi-image-background, .ladi-button-background, .ladi-headline, .ladi-video-background, .ladi-countdown-background, .ladi-box, .ladi-frame-background, .ladi-tabs-background, .ladi-survey-option-background, .ladi-survey-option-image, .ladi-banner, .ladi-form-item-background, .ladi-gallery-view-item, .ladi-gallery-control-item, .ladi-spin-lucky-screen, .ladi-spin-lucky-start, .ladi-form-label-container .ladi-form-label-item.image, .ladi-list-paragraph ul li'); for (var i = 0; i < list_element_lazyload.length; i++) { var rect = list_element_lazyload[i].getBoundingClientRect(); if (rect.x == "undefined" || rect.x == undefined || rect.y == "undefined" || rect.y == undefined) { rect.x = rect.left; rect.y = rect.top; } var offset_top = rect.y + window.scrollY; if (offset_top >= window.scrollY + window.innerHeight || window.scrollY >= offset_top + list_element_lazyload[i].offsetHeight) { list_element_lazyload[i].classList.add('ladi-lazyload'); } } if (typeof style_lazyload != "undefined" && style_lazyload != undefined) { style_lazyload.parentElement.removeChild(style_lazyload); } var currentScrollY = window.scrollY; var stopLazyload = function (event) { if (event.type == "scroll" && window.scrollY == currentScrollY) { currentScrollY = -1; return; } docEventScroll.removeEventListener('scroll', stopLazyload); list_element_lazyload = document.getElementsByClassName('ladi-lazyload'); while (list_element_lazyload.length > 0) { list_element_lazyload[0].classList.remove('ladi-lazyload'); } }; var scrollEventPassive = null; try { var opts = Object.defineProperty({}, 'passive', { get: function () { scrollEventPassive = { passive: true }; } }); window.addEventListener('testPassive', null, opts); window.removeEventListener('testPassive', null, opts); } catch (e) { } docEventScroll.addEventListener('scroll', stopLazyload, scrollEventPassive); })();</script>
+  <!--[if lt IE 9]><script src="https://w.ladicdn.com/v2/source/html5shiv.min.js?v=1656664978045"></script><script src="https://w.ladicdn.com/v2/source/respond.min.js?v=1656664978045"></script><![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Open Sans:bold,regular|Quicksand:bold,regular&display=swap"
+    rel="stylesheet" type="text/css">
+  <link href="https://w.ladicdn.com/v2/source/ladipage.min.css?v=1656664978045" rel="stylesheet" type="text/css">
+  <script src="https://w.ladicdn.com/v2/source/ladipage.vi.min.js?v=1656664978045" type="text/javascript"></script>
+  <script id="script_event_data"
+    type="application/json">{"SECTION1":{"type":"section","option.background_video.video_value":"https://s.ladicdn.com/6276b829a404bc006a89ac25/header_preview-20220714040022.mp4","option.background_video.video_type":"direct","desktop.option.background-style":"video","mobile.option.background-style":"video"},"IMAGE78":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/"}]},"IMAGE93":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://marketplace.slimeroyale.com/marketplace"}]},"IMAGE95":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/bes-inflation-control"}]},"IMAGE96":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/gameplay/the-circle-system"}]},"IMAGE97":{"type":"image","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/tokenomic"}]},"IMAGE107":{"type":"image","desktop.style.animation-name":"pulse","desktop.style.animation-delay":"1s","mobile.style.animation-name":"pulse","mobile.style.animation-delay":"1s"},"PARAGRAPH175":{"type":"paragraph","option.data_event":[{"action_type":"action","type":"hidden_show"}]},"CAROUSEL303":{"type":"carousel","desktop.option.carousel_setting.autoplay":true,"desktop.option.carousel_setting.autoplay_time":1,"desktop.option.carousel_crop.width":"6800px","desktop.option.carousel_crop.width_item":"1700px","mobile.option.carousel_setting.autoplay":true,"mobile.option.carousel_setting.autoplay_time":1,"mobile.option.carousel_crop.width":"7320px","mobile.option.carousel_crop.width_item":"1830px"},"PARAGRAPH378":{"type":"paragraph","option.data_event":[{"action_type":"action","type":"link","target":"_blank","action":"https://whitepaper.slimeroyale.com/"}]},"PARAGRAPH379":{"type":"paragraph","option.data_event":[{"action_type":"action","type":"link","target":"_self","action":"https://marketplace.slimeroyale.com/marketplace"}]},"CAROUSEL399":{"type":"carousel","desktop.option.carousel_setting.autoplay":true,"desktop.option.carousel_setting.autoplay_time":5,"desktop.option.carousel_crop.width":"9000px","desktop.option.carousel_crop.width_item":"1500px","mobile.option.carousel_setting.autoplay":true,"mobile.option.carousel_setting.autoplay_time":5,"mobile.option.carousel_crop.width":"9000px","mobile.option.carousel_crop.width_item":"1500px"}}</script>
 
 </body>
 

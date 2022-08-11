@@ -26,3 +26,9 @@ function prePopup() {
     $('#popup-confirm-code').hide();
     $('#popup-send-code').show();
 }
+
+function openPopupRegisterNow() {
+    $('.popup').hide();
+    $('#popup-register-now').show();
+}
+
