@@ -1731,7 +1731,7 @@
         <div class="popup" id="popup-success" style="display:block; padding-top: 50px; padding-bottom: 50px">
           <h2 data-i18n="register-success" class="register-success">Successful registration!</h2>
           <p style="margin-bottom: 20px; font-size: 16px; margin-top: 30px" data-i18n="success-text">
-            Please check your email for detailed guideline <br /> on My Circle Feature.
+            Please check your email for registration confirmation & game guideline.
           </p>
           <img class="close-popup lazy" onclick="closePopup()" src="./images/web/img.webp" alt="close" />
           <div target="_blank">
@@ -1814,7 +1814,7 @@
             Register
           </button>
 
-          <img class="close-popup lazy" src="./Images/webp/img.webp" onclick="closePopup()" alt="close" />
+          <img class="close-popup lazy" src="./images/web/img.webp" onclick="closePopup()" alt="close" />
         </div>
 
         <div class="popup-loading" id="popup-loading"
@@ -2088,74 +2088,7 @@
     });
 
 
-    (function () {
-      let YouTubeContainers = document.querySelectorAll(".embed-youtube-header");
-
-      // Iterate over every YouTube container you may have
-      for (let i = 0; i < YouTubeContainers.length; i++) {
-        let container = YouTubeContainers[i];
-        let imageSource = "./Images/webp/banner_preview.webp";
-
-        // Load the Thumbnail Image asynchronously
-        let image = new Image();
-        image.src = imageSource;
-        image.addEventListener("load", function () {
-          container.appendChild(image);
-        });
-
-        // When the user clicks on the container, load the embedded YouTube video
-        container.addEventListener("click", function () {
-          let iframe = document.createElement("iframe");
-
-          iframe.setAttribute("frameborder", "0");
-          iframe.setAttribute("width", "840");
-          iframe.setAttribute("height", "470");
-          iframe.setAttribute("allowfullscreen", "");
-          iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
-          // Important: add the autoplay GET parameter, otherwise the user would need to click over the YouTube video again to play it
-          iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.videoId + "?rel=0&showinfo=0&autoplay=1");
-
-          // Clear Thumbnail and load the YouTube iframe
-          this.innerHTML = "";
-          this.appendChild(iframe);
-        });
-      }
-    })();
-
-    (function () {
-      let YouTubeContainers = document.querySelectorAll(".embed-youtube-mobile");
-
-      // Iterate over every YouTube container you may have
-      for (let i = 0; i < YouTubeContainers.length; i++) {
-        let container = YouTubeContainers[i];
-        let imageSource = "./Images/webp/banner_preview.webp";
-
-        // Load the Thumbnail Image asynchronously
-        let image = new Image();
-        image.src = imageSource;
-        image.addEventListener("load", function () {
-          container.appendChild(image);
-        });
-
-        // When the user clicks on the container, load the embedded YouTube video
-        container.addEventListener("click", function () {
-          let iframe = document.createElement("iframe");
-
-          iframe.setAttribute("frameborder", "0");
-          iframe.setAttribute("width", "350");
-          iframe.setAttribute("height", "196");
-          iframe.setAttribute("allowfullscreen", "");
-          iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
-          // Important: add the autoplay GET parameter, otherwise the user would need to click over the YouTube video again to play it
-          iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.videoId + "?rel=0&showinfo=0&autoplay=1");
-
-          // Clear Thumbnail and load the YouTube iframe
-          this.innerHTML = "";
-          this.appendChild(iframe);
-        });
-      }
-    })();
-
+  
     // $(document).ready(function () {
     //     let showBanner = setInterval(IntervelBanner, 1000);
     //     let timeShowBanner = 0;
@@ -2171,62 +2104,14 @@
     //     }
     // });
 
-    const section_2_pc = bodymovin.loadAnimation({
-      container: document.getElementById('image-section-2-pc'),
-      path: './json/Ruong.json',
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      name: "ruong",
-    });
-
-    const section_2_mobile = bodymovin.loadAnimation({
-      container: document.getElementById('image-section-2-mobile'),
-      path: './json/Ruong.json',
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      name: "ruong",
-    });
-
+ 
 
     //iframe video
-    (function () {
-      handleDetectVideoOnMobileAndPc('-pc')
-      handleDetectVideoOnMobileAndPc('-mobile')
-    })();
+ 
 
-    function handleDetectVideoOnMobileAndPc(type) {
-      window.dataVideoIDYoutube = '-dS1x17d-4I';
-      let YouTubeContainers = document.querySelector(".embed-youtube-game-media" + type);
-      let container = YouTubeContainers;
-      let imageSource = "./Images/webp/videoPreview.webp";
-      let image = new Image();
-      image.src = imageSource;
-      image.style.width = "100%";
-      image.style.height = "100%";
-      image.addEventListener("load", function () {
-        container.appendChild(image);
-      });
-
-      container.addEventListener("click", function () {
-        let videoDome = document.querySelector('#video-game-media' + type);
-        let iframe = document.createElement("iframe");
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("id", "video-game-media" + type);
-        iframe.setAttribute("height", "100%");
-        iframe.setAttribute("width", "100%");
-        iframe.setAttribute("allowfullscreen", "");
-        iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
-        iframe.setAttribute("src", "https://www.youtube.com/embed/" + window.dataVideoIDYoutube + "?rel=0&showinfo=0c&autoplay=1");
-        this.innerHTML = "";
-        this.appendChild(iframe);
-      });
-    }
-
+  
     let classList = []
     const activeSliederSlime = document.querySelectorAll('.special_slime');
-    const activeSliederSlimeMobile = document.querySelectorAll('.special_slime_mobile');
     console.log(activeSliederSlime);
 
     function handleActive(value) {
@@ -2238,6 +2123,7 @@
       // console.log(classList.contains("active"));
     }
 
+    const activeSliederSlimeMobile = document.querySelectorAll('.special_slime_mobile');
     function handleActiveMobile(value) {
       activeSliederSlimeMobile.forEach(item => {
         console.log(item);
@@ -2246,6 +2132,7 @@
       classList = activeSliederSlimeMobile[value].classList.add("active")
       // console.log(classList.contains("active"));
     }
+
     const changImageEvent = document.getElementById('select_event');
     async function handleSlimeEvent(index, data) {
       const activeDefaule = document.querySelectorAll('.active_event')
