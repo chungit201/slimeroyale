@@ -139,7 +139,7 @@
           <div class="col-3 wow animate__animated animate__fadeInLeft">
             <img width="100%" src="./images/free-to-play-1.png" alt="">
           </div>
-          <div onclick="clickBtnDownload1()" style="cursor: pointer;"
+          <div onclick="clickBtnRegister()" style="cursor: pointer;"
             class="col-3 btn-dowload-top d-flex align-items-center wow animate__animated animate__fadeInUp">
             <div onclick="openPopup()" style="position: relative;" class="d-flex justify-content-center">
               <img width="80%" src="./images/btn_download.png" alt="">
@@ -168,7 +168,7 @@
           </div>
         </div>
         <div class="row w-100 d-flex justify-content-center">
-          <div style="cursor: pointer;"
+          <div style="cursor: pointer;" onclick="clickBtnRegister()"
             class="col-5 btn-dowload-top d-flex align-items-center wow animate__animated animate__fadeInUp">
             <a onclick="openPopup()" 
               style="position: relative;" class="d-flex justify-content-center link_download">
@@ -1543,17 +1543,25 @@
           <div class='ladi-image'>
             <div class="ladi-image-background"></div>
           </div>
+          
         </div>
-        <a href="https://files.slimeroyale.com/games/SlimeMainnet_Android_V0.2.0.6.apk" target="_blank">
-
-          <div onclick="clickBtnDownload2()" id="IMAGE107" class='ladi-element'>
-            <div class='ladi-image'>
-              <div class="ladi-image-background"></div>
+      
+      </div>
+      <div class="row w-100 d-flex justify-content-center" style="position: absolute; bottom: 0px;">
+        <div onclick="clickBtnRegister()" style="cursor: pointer;"
+          class="col-3 btn-dowload-top d-flex align-items-center wow animate__animated animate__fadeInUp">
+          <div onclick="openPopup()" style="position: relative;" class="d-flex justify-content-center">
+            <img width="80%" src="./images/btn_download.png" alt="">
+            <div class="w-100 d-flex justify-content-center"
+              style="position: absolute; bottom: 50%;transform: translateY(50%);">
+              <span class="text-light btn_download_text mx-2" style="font-weight: 700;font-size: 24px;">
+                REGISTER NOW
+              </span>
             </div>
           </div>
-        </a>
-
+        </div>
       </div>
+    
     </div>
 
     <div id="SECTION82_MOBILE" class='ladi-section pc__none mt-5'>
@@ -1626,11 +1634,19 @@
             <div class="col-12">
               <img width="100%" src="./images/group-slime.webp" alt="">
             </div>
-            <div onclick="clickBtnDownload2()" class="d-flex justify-content-center">
-              <div class="col-4 ">
-                <a href="https://files.slimeroyale.com/games/SlimeMainnet_Android_V0.2.0.6.apk" target="_blank">
-                  <img class="btn-dowload-end" width="100%" src="./images/btn-download-game-2.png" alt="">
-                </a>
+          </div>
+
+          <div class="row w-100 d-flex justify-content-center pb-5">
+            <div onclick="clickBtnRegister()" style="cursor: pointer;"
+              class="col-6 btn-dowload-top d-flex align-items-center wow animate__animated animate__fadeInUp">
+              <div onclick="openPopup()" style="position: relative;" class="d-flex justify-content-center">
+                <img width="80%" src="./images/btn_download.png" alt="">
+                <div class="w-100 d-flex justify-content-center"
+                  style="position: absolute; bottom: 50%;transform: translateY(50%);">
+                  <span class="text-light btn_download_text mx-2" style="font-weight: 700;font-size: 24px;">
+                    REGISTER NOW
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1642,7 +1658,7 @@
       <div class="box-popup">
         <div class="popup" id="popup-send-code" style="display: block">
           <p style="margin-bottom: 30px;">
-            <span style="font-size: 23px;color: #580A0A;"><b data-i18n="free-to">Free-to-Earn Registration</b></span>
+            <span style="font-size: 23px;color: #580A0A;"><b data-i18n="free-to">Pre-register for Open Beta</b></span>
             <br>
           </p>
 
@@ -1735,7 +1751,7 @@
           </p>
           <img class="close-popup lazy" onclick="closePopup()" src="./images/web/img.webp" alt="close" />
           <div target="_blank">
-            <a href="https://t.me/SlimeRoyale">
+            <a onclick="joinTelegram()" href="https://t.me/SlimeRoyale">
               <button style="height: 100%;padding: 15px" data-i18n="join-tele" class="btn-slime-active">
                 Join Telegram Community
                 for Free Gamer
@@ -1846,6 +1862,13 @@
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
+
+      gtag('event', 'Pageview', { 'event_category': 'Open_Beta_Game', 'event_label': 'Pageview' });
+
+    function clickBtnRegister () {
+      fbq('track', 'Register');
+    }
+
     function clickBtnDownload1() {
       fbq('click', 'Download_Open_Beta_Game');
       gtag('event', 'click', { 'event_category': 'Open_Beta_Game', 'event_label': 'button_download_HM_1' });
@@ -1853,6 +1876,11 @@
     function clickBtnDownload2() {
       gtag('event', 'click', { 'event_category': 'Open_Beta_Game', 'event_label': 'button_download_HM_2' });
       fbq('click', 'Download_Open_Beta_Game 2');
+    }
+
+    function joinTelegram(){
+      fbq('track', 'JoinCommunity');
+       gtag('event', 'click', { 'event_category': 'Open_Beta_Game', 'event_label': 'Join_community_pre-register' });
     }
   </script>
   <script>
@@ -2071,7 +2099,8 @@
           if (e.statusCode === 200) {
             $('.popup').hide();
             $('#popup-success').show();
-            gtag('event', 'show', { 'event_category': 'registration', 'event_label': 'register_success' });
+            fbq('track', 'SuccessfulRegisterPopUp');
+            gtag('event', 'show', { 'event_category': 'Open_Beta_Game', 'event_label': 'Pre-register_success_popup' });
           } else {
             $(span).html('Oops, please check your code and try again.');
             $(message).show();
@@ -2107,8 +2136,6 @@
  
 
     //iframe video
- 
-
   
     let classList = []
     const activeSliederSlime = document.querySelectorAll('.special_slime');
