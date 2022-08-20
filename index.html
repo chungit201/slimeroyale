@@ -146,8 +146,8 @@
                 <img width="80%" src="./images/btn_download.png" alt="">
                 <div class="w-100 d-flex justify-content-center"
                   style="position: absolute; bottom: 50%;transform: translateY(50%);">
-                  <span class="text-light btn_download_text mx-2" style="font-weight: 700;font-size: 24px;"> 
-                    REGISTER NOW
+                  <span class="text-light btn_download_text mx-2" style="font-weight: 700;font-size: 24px;">
+                    DOWNLOAD GAME
                   </span>
                 </div>
               </a>
@@ -1642,13 +1642,14 @@
     <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
     <div id="lightbox-screen" class="lightbox-screen"></div>
     <script>
+       gtag('event', 'Show', { 'event_category': 'Open_Beta_Game', 'event_label': 'Pageview' });
       function clickBtnDownload1() {
-        fbq('click', 'Download_Open_Beta_Game');
-        gtag('event', 'click', { 'event_category': 'Open_Beta_Game', 'event_label': 'button_download_HM_1' });
+        fbq('track', 'Download');
+        gtag('event', 'click', { 'event_category': 'Open_Beta_Game', 'event_label': 'button_download' });
       }
       function clickBtnDownload2() {
-        gtag('event', 'click', { 'event_category' : 'Open_Beta_Game', 'event_label': 'button_download_HM_2' });
-        fbq('click', 'Download_Open_Beta_Game 2');
+        gtag('event', 'click', { 'event_category' : 'Open_Beta_Game', 'event_label': 'button_download' });
+        fbq('track', 'Download');
       }
     </script>
     <script>
